@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://lifengzhuo.github.io/sitemap.xml
+Sitemap: https://zhuolifeng.github.io/sitemap.xml
