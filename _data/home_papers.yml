@@ -1,0 +1,39 @@
+# Figures cropped from the PDFs linked below: FA-RDP Fig. 1 (p. 1),
+# IPR-1 Fig. 1 (CVPR version, p. 1), and RESBev Fig. 1(a) (v2, p. 2).
+- title: "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation"
+  authors: "<strong>Lifeng Zhuo*</strong>, Wendi Chen*, Han Xue, Shirun Tang, Jun Lv, Cewu Lu, Chuan Wen"
+  venue: "RA-L 2026 · Under review"
+  equal_contribution: true
+  url: https://arxiv.org/abs/2607.28596
+  pdf: /assets/pdf/papers/fa-rdp.pdf
+  project: https://fa-rdp.github.io/
+  image: /assets/img/papers/fa-rdp.png
+  image_width: 744
+  image_height: 492
+  image_alt: "FA-RDP preserves diverse approach trajectories before contact and switches to rapid force feedback after contact."
+  summary: "A visual-force diffusion policy that adapts its control frequency to preserve diverse motions before contact and react quickly to force feedback during contact-rich manipulation."
+
+- title: "IPR-1: Interactive Physical Reasoner"
+  authors: "Mingyu Zhang*, <strong>Lifeng Zhuo*</strong>, Tianxi Tan, Guocan Xie, Xian Nie, Yan Li, Renjie Zhao, Zizhu He, Ziyu Wang, Jiting Cai, Yong-Lu Li"
+  venue: CVPR 2026
+  equal_contribution: true
+  url: https://arxiv.org/abs/2511.15407
+  pdf: /assets/pdf/papers/ipr-1.pdf
+  project: https://www.rhos.ai/research/ipr-1
+  code: https://github.com/rhos-ai/IPR-1
+  image: /assets/img/papers/ipr-1.png
+  image_width: 714
+  image_height: 432
+  image_alt: "IPR-1 learns shared physical and causal mechanisms from over 1,000 games and transfers to unseen games."
+  summary: "Combines vision-language reasoning with world-model rollouts to learn physics and causality through interaction, generalizing from over 1,000 training games to unseen environments."
+
+- title: "RESBev: Making BEV Perception More Robust"
+  authors: "<strong>Lifeng Zhuo</strong>, Kefan Jin, Zhe Liu, Hesheng Wang"
+  venue: "NeurIPS 2026 · Accepted"
+  url: https://arxiv.org/abs/2603.09529
+  pdf: /assets/pdf/papers/resbev.pdf
+  image: /assets/img/papers/resbev.png
+  image_width: 678
+  image_height: 400
+  image_alt: "RESBev predicts clean BEV features from temporal context and fuses them with corrupted features to restore perception."
+  summary: "A plug-and-play latent world model that predicts clean BEV features from temporal context and restores corrupted perception under natural disturbances and adversarial attacks."

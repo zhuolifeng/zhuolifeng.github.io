@@ -1,0 +1,152 @@
+.academic-home {
+  padding: 1.5rem 0 3rem;
+
+  .home-intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .home-avatar {
+    width: 150px;
+    height: 150px;
+    flex: 0 0 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .home-bio h1 {
+    margin: 0 0 0.8rem;
+    font-size: 2rem;
+    font-weight: 600;
+
+    span {
+      font-size: 0.85em;
+      font-weight: 400;
+      margin-left: 0.3rem;
+    }
+  }
+
+  .home-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    p {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  .home-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.2rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      min-height: 36px;
+      font-size: 0.8rem;
+    }
+
+    i {
+      font-size: 1.15rem;
+    }
+  }
+
+  .home-publications > h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-paper {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  .home-paper-image {
+    display: block;
+    padding: 0.4rem;
+    background: white;
+    border-radius: 6px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .home-paper-details h3 {
+    font-size: 1.08rem;
+    font-weight: 600;
+    line-height: 1.45;
+    margin: 0 0 0.5rem;
+  }
+
+  .home-paper-authors {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+
+  .home-paper-venue {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .home-paper-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .home-paper-summary {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 0;
+
+    .home-intro {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .home-avatar {
+      width: 112px;
+      height: 112px;
+      flex-basis: 112px;
+    }
+    .home-bio h1 {
+      font-size: 1.75rem;
+    }
+    .home-paper {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .home-paper-image {
+      max-width: 320px;
+    }
+  }
+}

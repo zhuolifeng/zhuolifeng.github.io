@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<div class="academic-home">
+  <header class="home-intro">
+    <img class="home-avatar" src="{{ page.portrait | relative_url }}" alt="Lifeng Zhuo's avatar" width="150" height="150">
+    <div class="home-bio">
+      <h1>
+        {{ site.first_name }}
+        {{ site.last_name }}
+        <span lang="zh-CN">卓立峰</span>
+      </h1>
+      <div class="home-description">{{ content }}</div>
+      <nav class="home-contact" aria-label="Contact links">
+        <a href="https://github.com/{{ site.data.socials.github_username }}" aria-label="GitHub"
+          ><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a
+        >
+        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}&amp;hl=en" aria-label="Google Scholar"
+          ><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a
+        >
+        <a href="mailto:{{ site.data.socials.email }}" aria-label="Email Lifeng Zhuo"
+          ><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span></a
+        >
+      </nav>
+    </div>
+  </header>
+
+  <section class="home-publications" aria-labelledby="publications-heading">
+    <h2 id="publications-heading">Publications</h2>
+    {% for paper in site.data.home_papers %}
+      <article class="home-paper">
+        <a class="home-paper-image" href="{{ paper.pdf | relative_url }}" aria-label="Read {{ paper.title | escape }} PDF">
+          <img
+            src="{{ paper.image | relative_url }}"
+            alt="{{ paper.image_alt | escape }}"
+            width="{{ paper.image_width }}"
+            height="{{ paper.image_height }}"
+            loading="lazy"
+          >
+        </a>
+        <div class="home-paper-details">
+          <h3>
+            <a href="{{ paper.url }}">{{ paper.title }}</a>
+          </h3>
+          <p class="home-paper-authors">{{ paper.authors }}</p>
+          <p class="home-paper-venue">
+            {{ paper.venue -}}
+            {%- if paper.equal_contribution -%}
+              <span> · * Equal contribution</span>
+            {%- endif %}
+          </p>
+          <div class="home-paper-links">
+            <a href="{{ paper.pdf | relative_url }}">PDF</a>
+            <a href="{{ paper.url }}">arXiv</a>
+            {% if paper.project -%}
+              <a href="{{ paper.project }}">Project</a>
+            {%- endif %}
+            {% if paper.code -%}
+              <a href="{{ paper.code }}">Code</a>
+            {%- endif %}
+          </div>
+          <p class="home-paper-summary">{{ paper.summary }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+</div>
