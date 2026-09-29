@@ -3,12 +3,12 @@ layout: default
 ---
 <div class="academic-home">
   <header class="home-intro">
-    <img class="home-avatar" src="{{ page.portrait | relative_url }}" alt="Lifeng Zhuo's avatar" width="150" height="150">
+    <img class="home-avatar" src="{{ page.portrait | relative_url }}" alt="Lifeng Zhuo's avatar" width="190" height="190">
     <div class="home-bio">
       <h1>
         {{ site.first_name }}
         {{ site.last_name }}
-        <span lang="zh-CN">卓立峰</span>
+        <span lang="zh-CN">| 卓立峰</span>
       </h1>
       <div class="home-description">{{ content }}</div>
       <nav class="home-contact" aria-label="Contact links">
@@ -40,7 +40,7 @@ layout: default
         </a>
         <div class="home-paper-details">
           <h3>
-            <a href="{{ paper.url }}">{{ paper.title }}</a>
+            <a href="{% if paper.project %}{{ paper.project }}{% else %}{{ paper.url }}{% endif %}">{{ paper.title }}</a>
           </h3>
           <p class="home-paper-authors">{{ paper.authors }}</p>
           <p class="home-paper-venue">

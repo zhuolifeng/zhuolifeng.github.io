@@ -1,17 +1,31 @@
 .academic-home {
-  padding: 1.5rem 0 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem 0 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  a {
+    color: #1772d0;
+  }
+  a:hover {
+    color: #c47116;
+  }
+  html[data-theme="dark"] & a {
+    color: #79b8ff;
+  }
 
   .home-intro {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
+    flex-direction: row-reverse;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .home-avatar {
-    width: 150px;
-    height: 150px;
-    flex: 0 0 150px;
+    width: 190px;
+    height: 190px;
+    flex: 0 0 190px;
     object-fit: cover;
     border-radius: 50%;
   }
@@ -19,7 +33,7 @@
   .home-bio h1 {
     margin: 0 0 0.8rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
 
     span {
       font-size: 0.85em;
@@ -29,8 +43,8 @@
   }
 
   .home-description {
-    font-size: 0.95rem;
-    line-height: 1.7;
+    font-size: 0.875rem;
+    line-height: 1.65;
 
     p {
       margin-bottom: 0.7rem;
@@ -56,18 +70,17 @@
   }
 
   .home-publications > h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
   }
 
   .home-paper {
     display: grid;
-    grid-template-columns: 250px minmax(0, 1fr);
+    grid-template-columns: 190px minmax(0, 1fr);
     align-items: center;
-    gap: 1.6rem;
-    padding: 1.5rem 0;
-    border-top: 1px solid var(--global-divider-color);
+    gap: 1.5rem;
+    padding: 1.25rem 0;
   }
 
   .home-paper-image {
@@ -84,7 +97,7 @@
   }
 
   .home-paper-details h3 {
-    font-size: 1.08rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     line-height: 1.45;
     margin: 0 0 0.5rem;
@@ -114,7 +127,7 @@
   }
 
   .home-paper-summary {
-    font-size: 0.88rem;
+    font-size: 0.875rem;
     line-height: 1.65;
     margin: 0;
   }
