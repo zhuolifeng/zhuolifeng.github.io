@@ -2,33 +2,50 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Undergraduate in Software Engineering · Shanghai Jiao Tong University
+description: Lifeng Zhuo's research, education, and publications.
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am **Lifeng Zhuo (卓立峰)**, an undergraduate student in Software Engineering at the School of Computer Science, Shanghai Jiao Tong University, advised by **Prof. Chuan Wen** and **Prof. Cewu Lu**. My research focuses on **robot learning and multimodal policies for contact-rich manipulation**, including our work on [FA-RDP](https://fa-rdp.github.io/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+[Email](mailto:lifengzhuo1@gmail.com) · [Google Scholar](https://scholar.google.com/citations?user=N7776foAAAAJ&hl=zh-CN) · [GitHub](https://github.com/zhuolifeng)
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Education
+
+**Shanghai Jiao Tong University**, Shanghai, China<br>
+B.Eng. in Software Engineering, School of Computer Science<br>
+September 2023 – June 2028 (expected)
+
+## Publications
+
+### IPR-1: Interactive Physical Reasoner
+
+Mingyu Zhang\*, **Lifeng Zhuo\***, et al.<br>
+**CVPR 2026 · Accepted** · \* Equal contribution<br>
+[Paper](https://arxiv.org/abs/2511.15407) · [Project](https://www.rhos.ai/research/ipr-1) · [Code](https://github.com/mybearyZhang/ipr-1)
+
+### RESBev: Making BEV Perception More Robust
+
+**Lifeng Zhuo**, Kefan Jin, Zhe Liu<br>
+**NeurIPS 2026 · Accepted**<br>
+[Paper](https://arxiv.org/abs/2603.09529)
+
+### FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation
+
+**Lifeng Zhuo**, Wendi Chen, Han Xue, Shirun Tang, Jun Lv, Cewu Lu, Chuan Wen<br>
+**IEEE Robotics and Automation Letters (RA-L), 2026 · Under review**<br>
+[Paper](https://arxiv.org/abs/2607.28596) · [Project](https://fa-rdp.github.io/)
+
+## Honors & Awards
+
+- **Zhiyuan Honors Scholarship**, Shanghai Jiao Tong University — 2024, 2025
+- **Shanghai Jiao Tong University Excellence Scholarship (Class C)** — 2024, 2025
