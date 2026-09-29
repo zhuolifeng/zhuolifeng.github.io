@@ -3,7 +3,6 @@ layout: default
 ---
 <div class="academic-home">
   <header class="home-intro">
-    <img class="home-avatar" src="{{ page.portrait | relative_url }}" alt="Lifeng Zhuo's avatar" width="190" height="190">
     <div class="home-bio">
       <h1>
         {{ site.first_name }}
@@ -21,8 +20,18 @@ layout: default
         <a href="mailto:{{ site.data.socials.email }}" aria-label="Email Lifeng Zhuo"
           ><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span></a
         >
+        <a
+          href="{{ '/assets/img/wechat-qr.jpg' | relative_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WeChat: open QR code"
+          title="Scan my WeChat QR code"
+        >
+          <i class="fa-brands fa-weixin" aria-hidden="true"></i><span>WeChat</span>
+        </a>
       </nav>
     </div>
+    <img class="home-avatar" src="{{ page.portrait | relative_url }}" alt="Lifeng Zhuo's avatar" width="190" height="190">
   </header>
 
   <section class="home-publications" aria-labelledby="publications-heading">
