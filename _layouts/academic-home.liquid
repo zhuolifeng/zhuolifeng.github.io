@@ -34,6 +34,14 @@ layout: default
     <img class="home-avatar" src="{{ page.portrait | relative_url }}" alt="Lifeng Zhuo's avatar" width="190" height="190">
   </header>
 
+  {% assign featured_news = site.news | where: 'featured', true %}
+  {% if featured_news.size > 0 %}
+    <section class="home-news" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      {% include news.liquid items=featured_news %}
+    </section>
+  {% endif %}
+
   <section class="home-publications" aria-labelledby="publications-heading">
     <h2 id="publications-heading">Publications</h2>
     {% for paper in site.data.home_papers %}

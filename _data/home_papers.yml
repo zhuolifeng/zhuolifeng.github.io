@@ -2,11 +2,12 @@
 # IPR-1 Fig. 1 (CVPR version, p. 1), and RESBev Fig. 1(a) (v2, p. 2).
 - title: "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation"
   authors: "<strong>Lifeng Zhuo*</strong>, Wendi Chen*, Han Xue, Shirun Tang, Jun Lv, Cewu Lu, Chuan Wen"
-  venue: "arXiv preprint, 2026"
+  venue: RA-L 2026
   equal_contribution: true
   url: https://arxiv.org/abs/2607.28596
   pdf: /assets/pdf/papers/fa-rdp.pdf
   project: https://fa-rdp.github.io/
+  code: https://github.com/zhuolifeng/frequency_adaptive_policy
   image: /assets/img/papers/fa-rdp.png
   image_width: 744
   image_height: 492

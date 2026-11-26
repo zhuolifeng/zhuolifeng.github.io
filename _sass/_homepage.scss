@@ -4,14 +4,17 @@
   padding: 0.5rem 0 3rem;
   font-family: Arial, Helvetica, sans-serif;
 
-  a {
+  a,
+  .table a {
     color: #1772d0;
-  }
-  a:hover {
-    color: #c47116;
-  }
-  html[data-theme="dark"] & a {
-    color: #79b8ff;
+
+    &:hover {
+      color: #c47116;
+    }
+
+    html[data-theme="dark"] & {
+      color: #79b8ff;
+    }
   }
 
   .home-intro {
@@ -68,10 +71,28 @@
     }
   }
 
+  .home-news > h2,
   .home-publications > h2 {
     font-size: 1.375rem;
     font-weight: 400;
     margin-bottom: 0.75rem;
+  }
+
+  .home-news {
+    margin-bottom: 2rem;
+
+    th,
+    td {
+      padding-left: 0;
+      color: var(--global-text-color);
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+
+    th {
+      padding-right: 1rem;
+      white-space: nowrap;
+    }
   }
 
   .home-paper {
